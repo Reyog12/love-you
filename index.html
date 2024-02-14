@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Gift </title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fde6e6; /* Soft pink background */
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff007f; /* Pink title */
+            font-size: 36px; /* Larger font size for title */
+            margin-bottom: 20px; /* Add some space below title */
+        }
+        .heart {
+            width: 100px;
+            height: auto;
+            margin: 20px;
+            cursor: pointer; /* Change cursor to pointer on hover */
+            transition: transform 0.3s ease; /* Add smooth transition */
+        }
+        .heart:hover {
+            transform: scale(1.2); /* Scale up the heart on hover */
+        }
+        .rose {
+            width: 150px;
+            height: auto;
+            margin: 20px;
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2)); /* Add drop shadow to rose */
+        }
+        .girlfriend-photo {
+            border-radius: 50%;
+            width: 200px;
+            height: auto;
+            margin: 20px;
+            border: 5px solid #ff007f; /* Pink border */
+        }
+        .video-placeholder {
+            margin-top: 50px; /* Add more space above the video */
+        }
+        .btn {
+            background-color: #ff007f; /* Pink button */
+            color: #fff;
+            padding: 12px 30px; /* Larger padding for button */
+            border: none;
+            border-radius: 25px; /* Rounded corners */
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Remove underline */
+        }
+        .btn:hover {
+            background-color: #ff0055; /* Darker pink on hover */
+        }
+        p {
+            color: #ff007f; /* Pink text */
+            font-style: italic; /* Italicize text */
+            font-size: 18px; /* Larger font size for text */
+            margin-top: 20px; /* Add space above paragraph */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day!</h1>
+        <img src="download-removebg-preview (1).png" alt="Heart" class="heart" onclick="playAudio()">
+        <img src="download-removebg-preview (2).png" alt="Rose" class="rose">
+        <h2>For My Beloved</h2>
+        <img src="gf.jpg" alt="Girlfriend" class="girlfriend-photo">
+        <p>My love for you is like a never-ending journey, always growing, always new.</p>
+        <div class="video-placeholder">
+            <video width="600" height="350" controls>
+                <source src="lv_7320375517616557318_20240214195351.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <br>
+        <a href="main.html" class="btn">Explore More</a>
+        <p>Click on the heart for a special surprise!</p>
+    </div>
+
+    <!-- Hidden audio element -->
+    <audio id="audio" src="both-male-female-audio.mp3"></audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
+
